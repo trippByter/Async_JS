@@ -27,7 +27,7 @@ function fetch_data(url_api, callback) {
 // 'data1' es el resultado de la petición que estamos ejecutando
 fetch_data(API, function(error1, data1){
     if (error1) return console.error(error1);
-    fetch_data(API + data1.results[0].id,function(error2, data2){
+    fetch_data(API + data1.results[0].id, function(error2, data2){
         if(error2) return console.error(error2);
         fetch_data(data2.origin.url, function(error3, data3){
             if(error3) return console.error(error3);
