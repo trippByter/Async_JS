@@ -1,4 +1,5 @@
 const somethingWillHappen00 = () => {
+    // si se ejecuta de forma correcta o si es rechazada
     return new Promise((resolve, reject) => {
         if (true) {
             resolve('Promise00: Resolve - True');
